@@ -1,0 +1,3 @@
+.dropdown-toggle::after {
+    content: none; /* Elimina el contenido de la flechita */
+  }
