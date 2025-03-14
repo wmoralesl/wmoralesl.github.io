@@ -56,19 +56,14 @@
 
   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="actionMenuButton"> 
     
-    <li><a class="dropdown-item" href="{% url 'private:update_profile' %}">
-      <i class="bi bi-pencil-square me-2"></i>
-      Editar perfil
-    </a></li>
-    <li><a class="dropdown-item" href="{% url 'private:update_password' %}">
-      <i class="bi bi-person-lock me-2"></i>
-      Cambiar contraseña
-    </a></li>
-
-    <li><a class="dropdown-item" href="{% url 'private:view_my_actions' %}">
-      <i class="bi bi-clock-history me-2"></i>
-      Historial de cambios
-    </a></li>
+    <li>
+      <a class="dropdown-item" href="/source/profilePhoto.jpg" download>
+        <i class="bi bi-download me-2"></i>
+          Descargar CV
+      </a>
+    </li>
+    
+    
 
   </ul>
 </div>
@@ -91,14 +86,14 @@
   
   <div style="margin-top: 96px;">
       <!-- Nombre completo y rol -->
-      <h2 class="text-capitalize">Wilson Morales</h2>
+      <h2 class="text-capitalize user-select-none">Wilson Morales</h2>
   </div>
 
   <!-- Información del usuario -->
 <div class="row">
-  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0"><i class="bi bi-info-circle" ></i> Desarrollador Web</div>
-  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0"><i class="bi bi-briefcase" ></i> Disponible</div>
-  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0"><i class="bi bi-geo-alt" ></i> Guatemala</div>
+  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0 user-select-none"><i class="bi bi-info-circle" ></i> Desarrollador Web</div>
+  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0 user-select-none"><i class="bi bi-briefcase" ></i> Disponible</div>
+  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0 user-select-none"><i class="bi bi-geo-alt" ></i> Guatemala</div>
 </div>
   
 </div>
@@ -256,12 +251,31 @@
           </div>
       
       <div class="tab-pane fade" id="contacto" role="tabpanel">
-          <h3>Contacto</h3>
-          <p>Puedes escribirme a: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
-          <p>O seguirme en redes sociales:</p>
-          <a href="#" class="btn btn-primary">LinkedIn</a>
-          <a href="#" class="btn btn-dark">GitHub</a>
-      </div>
+        <section id="contacto" class="pt-1 pt-md-5" style="height: 45vh;">
+          <div class="container text-center">
+              <h2 class="mb-1 mb-md-4">Contacto</h2>
+              <p>Puedes contactarme a través de los siguientes medios:</p>
+              
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                  <a href="https://www.linkedin.com/in/wilson-alberto-morales-l%C3%A1zaro-432a711a3/" target="_blank" class="btn btn-primary">
+                      <i class="bi bi-linkedin"></i> LinkedIn
+                  </a>
+                  <a href="https://github.com/wmoralesl" target="_blank" class="btn btn-dark">
+                      <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://gitlab.com/wmoralesl4" target="_blank" class="btn btn-danger">
+                      <i class="bi bi-git"></i> GitLab
+                  </a>
+                  <a href="mailto:wilsonm57wm@gmail.com" class="btn btn-secondary">
+                      <i class="bi bi-envelope-fill"></i> Correo
+                  </a>
+                  <a href="https://wa.me/50258700335" target="_blank" class="btn btn-success">
+                      <i class="bi bi-whatsapp"></i> WhatsApp
+                  </a>
+              </div>
+              <img class="mt-2 mt-md-5" src="/source/Untils/Kirby.gif" alt="" width="100vh">
+          </div>
+      </section>
   </div>
 </div>
 
@@ -271,7 +285,7 @@
 
 
 
-  <footer class="bg-light text-center py-4">
+  <footer class="text-center py-4">
     <p>© 2025 Wilson Morales. Todos los derechos reservados.</p>
   </footer>
 
