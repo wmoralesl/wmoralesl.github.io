@@ -7,36 +7,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="source/style.css">
+  <link rel="shortcut icon" href="source/Untils/person.png" type="image/x-icon">
   <!-- Fancybox CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <!-- Fancybox JS -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </head>
 <body>
-  <!-- <header class="bg-primary text-white py-5"> 
-    <div class="container">
-      <div class="row align-items-center">
-         Espacio para la fotografía 
-        <div class="col-md-3 text-center mb-3 mb-md-0">
-          <img src="source/profile.jpg" alt="Fotografía" class="rounded-circle img-fluid" style="max-width: 150px;">
-        </div>
-        Información personal 
-        <div class="col-md-9 text-center text-md-start">
-          <h1>Wilson Alberto Morales Lázaro</h1>
-          <p class="lead">Técnico en Soporte</p>
-          <p>
-            <i class="bi bi-envelope"></i> wilsonm57wm@gmail.com | 
-            <i class="bi bi-phone"></i> +502 5870 0335 | 
-             <i class="bi bi-geo-alt" ></i>San Luis Jilotepeque, Jalapa, Guatemala
-          </p>
-          <a href="source/cv.pdf" class="btn btn-outline-light mt-3" download>
-            <i class="bi bi-download"></i> Descargar CV
-          </a>
-        </div>
-      </div>
-    </div>
-  </header> -->
-  <!-- AASDD -->
   <div class="container mt-3">
     <div class="card position-relative">
         <!-- Imagen de portada -->
@@ -56,19 +33,12 @@
 
   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="actionMenuButton"> 
     
-    <li><a class="dropdown-item" href="{% url 'private:update_profile' %}">
-      <i class="bi bi-pencil-square me-2"></i>
-      Editar perfil
-    </a></li>
-    <li><a class="dropdown-item" href="{% url 'private:update_password' %}">
-      <i class="bi bi-person-lock me-2"></i>
-      Cambiar contraseña
-    </a></li>
-
-    <li><a class="dropdown-item" href="{% url 'private:view_my_actions' %}">
-      <i class="bi bi-clock-history me-2"></i>
-      Historial de cambios
-    </a></li>
+    <li>
+      <a class="dropdown-item" href="/source/Files/Wilson_Morales_Lazaro_CV.pdf" download>
+        <i class="bi bi-download me-2"></i>
+          Descargar CV
+      </a>
+    </li> 
 
   </ul>
 </div>
@@ -91,14 +61,14 @@
   
   <div style="margin-top: 96px;">
       <!-- Nombre completo y rol -->
-      <h2 class="text-capitalize">Wilson Morales</h2>
+      <h2 class="text-capitalize user-select-none">Wilson Morales</h2>
   </div>
 
   <!-- Información del usuario -->
 <div class="row">
-  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0"><i class="bi bi-info-circle" ></i> Desarrollador Web</div>
-  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0"><i class="bi bi-briefcase" ></i> Disponible</div>
-  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0"><i class="bi bi-geo-alt" ></i> Guatemala</div>
+  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0 user-select-none"><i class="bi bi-info-circle" ></i> Desarrollador Web</div>
+  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0 user-select-none"><i class="bi bi-briefcase" ></i> Disponible</div>
+  <div class="col-lg-4 col-sm-12 m-1 m-sm-1 m-lg-0 user-select-none"><i class="bi bi-geo-alt" ></i> Guatemala</div>
 </div>
   
 </div>
@@ -117,72 +87,134 @@
   </ul>
   <div class="tab-content p-4 border border-top-0" id="portfolioTabsContent">
       <div class="tab-pane fade show active" id="sobre" role="tabpanel">
-          <p>Joven apasionado por el desarrollo web. Poseo habilidades sólidas adquiridas a lo largo de mi formación y proyectos personales, desde el diseño de interfaces hasta la implementación de funcionalidades backend.</p>
           
+       <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2 class="text-primary"> Perfil Profesional</h2>
+          <p>Desarrollador web apasionado por la creación de soluciones tecnológicas eficientes. Cuento con experiencia en Python, Django y Vue, desarrollando aplicaciones web funcionales. Poseo habilidades sólidas en diseño de interfaces con Figma, así como en la implementación de funcionalidades backend y frontend. Además, tengo experiencia en la gestión de proyectos mediante Git y Trello.</p>
+          <p>Me considero una persona proactiva, autodidacta y orientada a la resolución de problemas, siempre en busca de mejorar mis conocimientos y aportar valor a cada proyecto en el que participo.</p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h2 class="text-primary">Habilidades Técnicas</h2>
+          <ul class="list-group user-select-none">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Programación & Desarrollo Web</div>
+                <span class="badge text-bg-success">Python</span>
+                <span class="badge text-bg-success">JavaScript</span>
+                <span class="badge text-bg-light">Django</span>
+                <span class="badge text-bg-light">HTML</span>
+                <span class="badge text-bg-light">CSS</span>
+                <span class="badge text-bg-light">Vue</span>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Diseño</div>
+                <span class="badge text-bg-success">Figma</span>
+                <span class="badge text-bg-light">Photoshop</span>
+                <span class="badge text-bg-light">Illustrator</span>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Sistemas & Herramientas</div>
+                <span class="badge text-bg-success">Windows</span>
+                <span class="badge text-bg-success">Linux</span>
+                <span class="badge text-bg-light">Postman</span>
+                <span class="badge text-bg-light">Trello</span>
+                <span class="badge text-bg-light">Microsoft Office</span>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Control de Versiones</div>
+                <span class="badge text-bg-success">Git</span>
+                <span class="badge text-bg-light">GitHub</span>
+                <span class="badge text-bg-light">GitLab</span>
+              </div>
+            </li>
+            
+        </ul>
+        </div>
+       </div>
+
+          <hr>
+
+          <section>
+            <h2 class="text-primary text-center">Experiencia Laboral</h2>
+                <h4 class="d-lg-inline-block">Diseño Gráfico | PubliPrint</h4>
+                <p class="badge bg-primary ms-0 ms-lg-2">Abril 2022 - Actual</p>
+                <p class="text-muted">Diseño de artes publicitarios y productos personalizados</p>
+
+               <h5 class="mt-2"> <i class="bi bi-award text-muted fs-6"></i> Logros</h5>
+               <div class="row  px-0 px-lg-5">
+                <div class="col-12 col-lg-6">
+                  <span>Desarrollo de un sistema web para la gestión de pedidos, clientes y empleados, que mejoró el control de entregas y el historial de pedidos</span>
+                </div>
+                <div class="col-12 col-lg-6  mt-2 mt-lg-0">
+                  <span>Implementación de un dashboard con visualización de pedidos, calendario y visualización de gráficos</span>
+                </div>
+               </div>
+          </section>
+
+          <hr>
+      
+          <section>
+            <h2 class="text-primary text-center ">Educación</h2>
+              <h4 class="d-lg-inline-block ">Universidad Mariano Gálvez de Guatemala</h4>
+              <p class="badge bg-primary ms-0 ms-lg-2">2020 - 2024</p>
+              <span class="badge bg-success ms-0">Pensum Cerrado</span>
+              <p class="text-muted">Ingeniería en Sistemas de Información</p>
+
+              <h4 class="d-lg-inline-block">Instituto Técnico de Capacitación y Productividad</h4>
+              <p class="badge bg-primary ms-0 ms-lg-2">2018 - 2019</p>
+              <p class="text-muted">Técnico en Infraestructura en Redes y Telecomunicaciones</p>
+
+          </section>
+                    
         <hr>
 
-          <section>
-            <h2 class="text-primary">Idiomas</h2>
-            <p>Español: Nativo</p>
-            <p>Inglés: Básico (B2)</p>
-          </section>
+        <section class="container py-4">
+          <h2 class="text-primary text-center mb-4">Habilidades</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <span class="badge bg-secondary">Resolución de problemas</span>
+            <span class="badge bg-secondary">Trabajo en equipo</span>
+            <span class="badge bg-secondary">Autodidacta</span>
+            <span class="badge bg-secondary">Comunicación efectiva</span>
+            <span class="badge bg-secondary">Empatía</span>
+            <span class="badge bg-secondary">Paciencia</span>
+          </div>
+        </section>
+        
+        <hr>
+        
+        <section class="container py-4">
+          <h2 class="text-primary text-center mb-4">Información Adicional</h2>
+          <table class="table table-bordered w-50 mx-auto">
+            <tbody>
+              <tr>
+                <th>Inglés</th>
+                <td>A1 - A2</td>
+              </tr>
+              <tr>
+                <th>Edad</th>
+                <td>23 años</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-          <hr>
-
-          <section>
-            <h2 class="text-primary">Técnologías</h2>
-            <ul class="list-inline">
-              <li class="list-inline-item badge bg-secondary p-2">HTML</li>
-              <li class="list-inline-item badge bg-secondary p-2">CSS</li>
-              <li class="list-inline-item badge bg-secondary p-2">JavaScript</li>
-              <li class="list-inline-item badge bg-secondary p-2">Bootstrap</li>
-              <li class="list-inline-item badge bg-secondary p-2">Python</li>
-              <li class="list-inline-item badge bg-secondary p-2">Django</li>
-              <li class="list-inline-item badge bg-secondary p-2">Vue</li>
-              <li class="list-inline-item badge bg-secondary p-2">SQL</li>
-          </ul>
-          </section>
-
-          <hr>
-          <section>
-            <h2 class="text-primary">Experiencia Laboral</h2>
-            <div class="mb-4">
-              <h5>PubliPrint</h5>
-              <p class="text-muted">Diseñador Gráfico | 25/04/22 - Actualidad</p>
-              <ul>
-                <li>Encargado de realizar los diferentes diseños requeridos para la elaboración de productos publicitarios.</li>
-              </ul>
-            </div>
-            <div class="mb-4">
-              <h5>Millennium</h5>
-              <p class="text-muted">Instructor | 02/01/2020 - 16/01/2022</p>
-              <ul>
-                <li>Encargado de impartir el curso Operador en Software y Reparador de computadoras. </li>
-                <li>Encargado de brindar mantenimiento predictivo, preventivo y correctivo a los equipos de cómputo.</li>
-              </ul>
-            </div>
-          </section>
-      
-          <hr>
-      
-          <section>
-            <h2 class="text-primary">Educación</h2>
-            <div>
-              <h5>INTECAP</h5>
-              <p class="text-muted">Técnico en Soporte de Infraestructura en Redes y Telecomunicaciones | 2018 - 2019</p>
-            </div>
-            <div>
-              <h5>IGER</h5>
-              <p class="text-muted">Bachillerato en Ciencias y Letras con Orientación en Gestión Administrativa y Contable | 2018 - 2019</p>
-            </div>
-          </section>
 
         </div>
 
       <div class="tab-pane fade" id="proyectos" role="tabpanel">
           <div class="card mb-3 mt-2">
             <div class="row g-0">
-              <div class="col-md-6">
+              <div class="col-lg-6">
                 <a href="source/Proyects/publiprint.jpg"
                 data-fancybox="publiprint" 
                 data-caption="Publiprint"
@@ -191,14 +223,26 @@
 
                 </a>
               </div>
-              <div class="col-md-6 mt-2">
+              <div class="col-lg-6 mt-2">
                 <div class="card-body">
                   <h5 class="card-title">SGI para PubliPrint</h5>
                   <p class="card-text">Desarrollo de un Sistema de Gestión Interna para PubliPrint, permitiendo administrar pedidos y clientes de manera eficiente.</p>
+                  <ul class="list-inline user-select-none">
+                    <li class="list-inline-item badge rounded-pill bg-black">Django</li>
+                    <li class="list-inline-item badge rounded-pill bg-success">HTML</li>
+                    <li class="list-inline-item badge rounded-pill bg-success">CSS</li>
+                    <li class="list-inline-item badge rounded-pill bg-success">JavaScript</li>
+                  </ul>
                   <p class="card-text"><small class="text-body-secondary">Actualizado el 13 de marzo 2025</small></p>
-                  <a class="btn btn-outline-secondary" href="https://gitlab.com/wmoralesl4/publiprint.git" target="_blank"><i class="bi bi-gitlab me-2"></i>Repositorio</a>
-                  <a class="btn btn-outline-primary" href="https://publiprint.pythonanywhere.com/" target="_blank"><i class="bi bi-globe me-2"></i>Página </a>
-                  <a class="btn btn-primary" href="">Ver más</a>
+                  <a class="btn btn-outline-secondary" href="https://gitlab.com/wmoralesl4/publiprint.git" target="_blank">
+                    <i class="bi bi-gitlab"></i>
+                    <span class="d-none d-lg-inline ms-1">Repositorio</span>
+                  </a>
+                  <a class="btn btn-outline-primary" href="https://publiprint.pythonanywhere.com/" target="_blank">
+                    <i class="bi bi-globe"></i>
+                    <span class="d-none d-lg-inline ms-1">Página</span> 
+                  </a>
+                  <!-- <a class="btn btn-primary" href="">Ver más</a> -->
                 </div>
               </div>
             </div>
@@ -206,7 +250,7 @@
           
           <div class="card mb-3">
             <div class="row g-0">
-              <div class="col-md-6 ">
+              <div class="col-lg-6 ">
                 <a href="source/Proyects/PixelZone.jpg"
                 data-fancybox="pixelzone" 
                 data-caption="pixelzone"
@@ -214,29 +258,27 @@
                 <img src="source/Proyects/PixelZone.jpg" class="img-fluid rounded-start" alt="...">
               </a>
               </div>
-              <div class="col-md-6 mt-2">
+              <div class="col-lg-6 mt-2">
                 <div class="card-body">
                   <h5 class="card-title">Tienda Pixel Zone</h5>
                   <p class="card-text">Desarrollo de un catálogo en línea para la venta de playeras</p>
+                  <ul class="list-inline user-select-none">
+                    <li class="list-inline-item badge rounded-pill bg-black">Django</li>
+                    <li class="list-inline-item badge rounded-pill bg-success">HTML</li>
+                    <li class="list-inline-item badge rounded-pill bg-success">CSS</li>
+                    <li class="list-inline-item badge rounded-pill bg-success">JavaScript</li>
+                    <li class="list-inline-item badge rounded-pill bg-success">Bootstrap</li>
+                  </ul>
                   <p class="card-text"><small class="text-body-secondary">Actualizado el 13 de marzo 2025</small></p>
-                  <a class="btn btn-outline-secondary" href="https://gitlab.com/wmoralesl4/pixelzoneweb.git" target="_blank"><i class="bi bi-gitlab me-2"></i>Repositorio</a>
-                  <a class="btn btn-outline-primary" href="https://pixelzone.pythonanywhere.com/" target="_blank"><i class="bi bi-globe me-2"></i>Página </a>
-                  <a class="btn btn-primary" href="">Ver más</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-6">
-                <img src="https://placehold.co/600x400" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-6 mt-2">
-                <div class="card-body">
-                  <h5 class="card-title">Huellitas por San Luis</h5>
-                  <p class="card-text">Desarrollo de una plataforma web para la gestión de adopciones en un refugio de perros y gatos.</p>
-                  <p class="card-text"><small class="text-body-secondary">Actualizado el 13 de marzo 2025</small></p>
+                  <a class="btn btn-outline-secondary" href="https://gitlab.com/wmoralesl4/pixelzoneweb.git" target="_blank">
+                    <i class="bi bi-gitlab"></i>
+                    <span class="d-none d-lg-inline ms-1">Repositorio</span>
+                  </a>
+                  <a class="btn btn-outline-primary" href="https://pixelzone.pythonanywhere.com/" target="_blank">
+                    <i class="bi bi-globe"></i>
+                    <span class="d-none d-lg-inline ms-1">Página</span> 
+                  </a>
+                  <!-- <a class="btn btn-primary" href="">Ver más</a> -->
                 </div>
               </div>
             </div>
@@ -244,12 +286,31 @@
           </div>
       
       <div class="tab-pane fade" id="contacto" role="tabpanel">
-          <h3>Contacto</h3>
-          <p>Puedes escribirme a: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
-          <p>O seguirme en redes sociales:</p>
-          <a href="#" class="btn btn-primary">LinkedIn</a>
-          <a href="#" class="btn btn-dark">GitHub</a>
-      </div>
+        <section id="contacto" class="pt-1 pt-md-5" style="height: 45vh;">
+          <div class="container text-center">
+              <h2 class="mb-1 mb-md-4">Contacto</h2>
+              <p>Puedes contactarme a través de los siguientes medios:</p>
+              
+              <div class="d-flex justify-content-center flex-wrap gap-3">
+                  <a href="https://www.linkedin.com/in/wilson-alberto-morales-l%C3%A1zaro-432a711a3/" target="_blank" class="btn btn-primary">
+                      <i class="bi bi-linkedin"></i> LinkedIn
+                  </a>
+                  <a href="https://github.com/wmoralesl" target="_blank" class="btn btn-dark">
+                      <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://gitlab.com/wmoralesl4" target="_blank" class="btn btn-danger">
+                      <i class="bi bi-git"></i> GitLab
+                  </a>
+                  <a href="mailto:wilsonm57wm@gmail.com" class="btn btn-secondary">
+                      <i class="bi bi-envelope-fill"></i> Correo
+                  </a>
+                  <a href="https://wa.me/50258700335" target="_blank" class="btn btn-success">
+                      <i class="bi bi-whatsapp"></i> WhatsApp
+                  </a>
+              </div>
+              <img class="mt-2 mt-md-5" src="/source/Untils/Kirby.gif" alt="" width="100vh">
+          </div>
+      </section>
   </div>
 </div>
 
@@ -259,7 +320,7 @@
 
 
 
-  <footer class="bg-light text-center py-4">
+  <footer class="text-center py-4">
     <p>© 2025 Wilson Morales. Todos los derechos reservados.</p>
   </footer>
 
